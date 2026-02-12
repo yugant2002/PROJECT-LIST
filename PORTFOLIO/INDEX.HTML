@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+
     <style>
       * {
         margin: 0;
@@ -41,12 +42,20 @@
         color: rgb(112, 103, 245);
         font-size: 1.02rem;
       }
+      main hr {
+        border: 0;
+        background-color: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
       .firstSection {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: 80px 0;
-        align-items: center;
+        height: 100vh;
       }
       .firstSection > div {
         width: 45%;
@@ -64,6 +73,185 @@
       .purple {
         color: blueviolet;
       }
+      #element {
+        color: blueviolet;
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        padding-top: 60px;
+      }
+
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .text-gray {
+        color: gray;
+      }
+
+    .secondSection .box {
+  position: relative;
+  background-color: white;
+  width: 80vw;
+  height: 2px;
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-between; /* 🔥 IMPORTANT */
+}
+
+.image-top {
+  position: absolute;
+  top: -30px;
+  left: -12px;
+  width: 25px;
+}
+
+ .secondSection .vertical {
+  position: relative;
+  background-color: white;
+  height: 90px;
+  width: 1px;
+}
+
+
+      .vertical-title {
+width: 23px;
+position:relative ;
+top: -32px ;
+left: -9px;
+      }
+
+      .vertical-text {
+  position: absolute;
+  top: 100px;
+  width: 150px;
+  font-size: 14px;
+}
+
+.vertical-desc {
+  position: absolute;
+  top: 130px;
+  width: 150px;
+  font-size: 12px;
+  color: gray;
+  
+}
+.vertical-text,
+.vertical-desc {
+  left: -40px;   
+}
+/* text ko thoda readable banao */
+.vertical-text {
+  position: absolute;
+  top: 100px;
+  width: 180px;          /* ⬅️ thoda bada */
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.vertical-desc {
+  position: absolute;
+  top: 130px;
+  width: 180px;          /* ⬅️ thoda bada */
+  font-size: 12px;
+  color: #bdbdbd;
+  line-height: 1.4;
+}
+
+/* center alignment */
+.vertical-text,
+.vertical-desc {
+  left: -60px;           /* ⬅️ better centering */
+}
+
+.secondSection .vertical:hover {
+  transform: translateY(-6px);
+  transition: 0.3s;
+}
+
+.image-top {
+  filter: drop-shadow(0 0 6px #9c97f1);
+}
+footer {
+  background-color: #0e0e1a;
+}
+
+.footer {
+  display: flex;
+  padding: 40px 120px;
+  justify-content: space-evenly;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer > div {
+  width: 220px;
+}
+
+.footer h3 {
+  font-size: 1.3rem;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.footer ul li:hover {
+  color: white;
+}
+
+.footer-rights {
+  text-align: center;
+  color: gray;
+  padding: 15px 0;
+  border-top: 1px solid #2c2c2c;
+  font-size: 14px;
+}
+footer {
+  background-color: #0e0e1a;
+}
+
+.footer {
+  display: flex;
+  padding: 40px 120px;
+  justify-content: space-evenly;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer > div {
+  width: 220px;
+}
+
+.footer h3 {
+  font-size: 1.3rem;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.footer ul li:hover {
+  color: white;
+}
+
+.footer-rights {
+  text-align: center;
+  color: gray;
+  padding: 15px 0;
+  border-top: 1px solid #2c2c2c;
+  font-size: 14px;
+}
+
+  
     </style>
   </head>
   <body>
@@ -86,14 +274,108 @@
         <div class="leftSection">
           Hi, My name is <span class="purple">Yugant</span>
 
-          <div>and I am a passinate</div>
-          <div>Developer</div>
+          <div>and I am a passionate</div>
+
+          <span id="element"></span>
         </div>
         <div class="rightSection">
-          <img src="./112-1127587_software-hire-developers-hd-png-download.png"
-          alt="img" right
+          <img
+            src="./112-1127587_software-hire-developers-hd-png-download.png"
+            alt="img"
+          />
         </div>
       </section>
+
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+      
+          
+      
+        <div class="box">
+
+  <div class="vertical">
+    <img class="image-top" src="./dev.png" alt="">
+    <div class="vertical-text">HTML Developer (2000)</div>
+    <div class="vertical-desc">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+  </div>
+
+  <div class="vertical">
+    <img class="image-top" src="./dev.png" alt="">
+    <div class="vertical-text">Node.js Developer (2012)</div>
+    <div class="vertical-desc">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+  </div>
+
+  <div class="vertical">
+    <img class="image-top" src="./dev.png" alt="">
+    <div class="vertical-text">Frontend Developer (2015)</div>
+    <div class="vertical-desc">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+  </div>
+
+  <div class="vertical">
+    <img class="image-top" src="./dev.png" alt="">
+    <div class="vertical-text">Full Stack Developer (2018)</div>
+    <div class="vertical-desc">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+  </div>
+
+</div>
+
+      </section>
     </main>
+    <footer>
+  <div class="footer">
+    <div class="footer-first">
+      <h3>Yugant's Developer Portfolio</h3>
+    </div>
+
+    <div class="footer-second">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="footer-third">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="footer-fourth">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-rights">
+    www.yugantsportfolio.com | All rights reserved
+  </div>
+</footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Graphic Designer", "Web Designer"],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
