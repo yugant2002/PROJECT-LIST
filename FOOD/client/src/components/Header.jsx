@@ -9,7 +9,7 @@ const Header = () => {
     <>
       <div className=" flex justify-between items-center py-3 bg-transparent fixed top-0 left-0 w-full text-white 
         z-99 px-30 ">
-        <h1 className="font-roboto text-2xl">Feane</h1>
+        <h1 className=" text-2xl">Feane</h1>
 
         <div className="flex justify-center items-center gap-9 font-semibold">
           <Link to={"/"} className="hover:text-orange-300">

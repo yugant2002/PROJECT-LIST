@@ -23,7 +23,7 @@ const Home = () => {
         </div>
 
         <div>
-          <img src={web} className="w-screen h-screen flex-fill" />
+          <img src={web} className=" h-screen w-full flex-fill" />
         </div>
       </div>
     </>
