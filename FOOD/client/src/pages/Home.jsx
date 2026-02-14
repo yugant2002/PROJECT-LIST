@@ -1,33 +1,34 @@
 import React from "react";
 import web from "../assets/web.png";
+
 const Home = () => {
-  return (
-    <>
-      <div className="relative h-20 w-full border mt-0.1">
-        <div className="absolute top-[150px] left-30 text-white max-w-xl px-10 ">
-          <h1 className="font-extrabold text-4xl leading-tight m-2">
-            Fast Food Restaurant
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
-            veniam, voluptatibus ad quas neque ab quo nemo expedita, sint
-            consequatur dolor? Iste aut doloribus dolores, quia delectus culpa
-            fugiat eligendi fugit eos! Cum asperiores explicabo provident aut
-            consequatur quod assumenda laboriosam nemo voluptates ea illo, iure
-            maiores, eius perferendis dolore.
-          </p>
+	return (
+		<main className="min-h-screen bg-gray-50">
+			{/* Hero */}
+			<section className="relative w-full h-[60vh] md:h-[80vh]">
+				<img src={web} alt="hero" className="w-full h-full object-cover" />
 
-          <button className="button  hover:bg-orange-300 shadow-lg bg-orange-600  px-6 font-semibold transition py-2  rounded-full mt-3">
-            Order Now
-          </button>
-        </div>
+				<div className="absolute inset-0 bg-black/40 flex items-center">
+					<div className="max-w-4xl mx-6 md:mx-12 text-white">
+						<h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
+							Fast Food Restaurant
+						</h1>
+						<p className="mt-4 text-sm md:text-base text-gray-200 max-w-2xl">
+							Delicious meals prepared fast. Fresh ingredients, bold flavors and
+							unbeatable combos — order now and enjoy a tasty deal today.
+						</p>
 
-        <div>
-          <img src={web} className=" h-screen w-full flex-fill" />
-        </div>
-      </div>
-    </>
-  );
+						<div className="mt-6">
+							<button className="bg-orange-600 hover:bg-orange-500 text-white px-6 py-3 rounded-full font-semibold shadow-lg">
+								Order Now
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+	);
 };
 
 export default Home;

@@ -2,17 +2,18 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Header from "./components/Header";
-import BanerCard from "./components/BanerCard";
+import Offers from "./pages/Offers";
 const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/" element={<BanerCard/>} />
-        </Routes>
+      
+       <Header />
+        <Home/>
+        <Offers/>
       </BrowserRouter>
+       
+      
     </>
   );
 };
