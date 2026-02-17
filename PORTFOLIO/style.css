@@ -1,0 +1,244 @@
+  * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(41, 69, 194);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(112, 103, 245);
+        font-size: 1.02rem;
+      }
+      main hr {
+        border: 0;
+        background-color: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+      }
+      .firstSection > div {
+        width: 45%;
+      }
+      .leftSection {
+        font-size: 3rem;
+
+        line-height: 1.4;
+      }
+      .rightSection img {
+        width: 80%;
+        background: transparent;
+      }
+
+      .purple {
+        color: blueviolet;
+      }
+      #element {
+        color: blueviolet;
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        padding-top: 60px;
+      }
+
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .text-gray {
+        color: gray;
+      }
+
+    .secondSection .box {
+  position: relative;
+  background-color: white;
+  width: 80vw;
+  height: 2px;
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.image-top {
+  position: absolute;
+  top: -30px;
+  left: -12px;
+  width: 25px;
+}
+
+ .secondSection .vertical {
+  position: relative;
+  background-color: white;
+  height: 90px;
+  width: 1px;
+}
+
+
+      .vertical-title {
+width: 23px;
+position:relative ;
+top: -32px ;
+left: -9px;
+      }
+
+      .vertical-text {
+  position: absolute;
+  top: 100px;
+  width: 150px;
+  font-size: 14px;
+}
+
+.vertical-desc {
+  position: absolute;
+  top: 130px;
+  width: 150px;
+  font-size: 12px;
+  color: gray;
+  
+}
+.vertical-text,
+.vertical-desc {
+  left: -40px;   
+}
+/* text ko thoda readable banao */
+.vertical-text {
+  position: absolute;
+  top: 100px;
+  width: 180px;          /* ⬅️ thoda bada */
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.vertical-desc {
+  position: absolute;
+  top: 130px;
+  width: 180px;          /* ⬅️ thoda bada */
+  font-size: 12px;
+  color: #bdbdbd;
+  line-height: 1.4;
+}
+
+/* center alignment */
+.vertical-text,
+.vertical-desc {
+  left: -60px;           /* ⬅️ better centering */
+}
+
+.secondSection .vertical:hover {
+  transform: translateY(-6px);
+  transition: 0.3s;
+}
+
+.image-top {
+  filter: drop-shadow(0 0 6px #9c97f1);
+}
+footer {
+  background-color: #0e0e1a;
+}
+
+.footer {
+  display: flex;
+  padding: 40px 120px;
+  justify-content: space-evenly;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer > div {
+  width: 220px;
+}
+
+.footer h3 {
+  font-size: 1.3rem;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.footer ul li:hover {
+  color: white;
+}
+
+.footer-rights {
+  text-align: center;
+  color: gray;
+  padding: 15px 0;
+  border-top: 1px solid #2c2c2c;
+  font-size: 14px;
+}
+footer {
+  background-color: #0e0e1a;
+}
+
+.footer {
+  display: flex;
+  padding: 40px 120px;
+  justify-content: space-evenly;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer > div {
+  width: 220px;
+}
+
+.footer h3 {
+  font-size: 1.3rem;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.footer ul li:hover {
+  color: white;
+}
+
+.footer-rights {
+  text-align: center;
+  color: gray;
+  padding: 15px 0;
+  border-top: 1px solid #2c2c2c;
+  font-size: 14px;
+}

@@ -7,7 +7,7 @@ import { FaShoppingCart } from "react-icons/fa";
 const Header = () => {
   return (
     <>
-      <div className=" flex justify-between items-center py-3 bg-transparent fixed top-0 left-0 w-full text-white 
+      <div className=" flex justify-between items-center py-3  fixed top-0 left-0 w-full text-white 
         z-99 px-30 ">
         <h1 className=" text-2xl">Feane</h1>
 
